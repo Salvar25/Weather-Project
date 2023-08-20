@@ -1,0 +1,108 @@
+body {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i1.wp.com/www.safegardgroup.com/web-content/uploads/2019/09/severe-weather-scaled.jpeg?fit=2560%2C1706&ssl=1");
+}
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 50px 30px;
+  font-size: 60px;
+  background-color: transparent;
+}
+.Weather {
+  border: solid;
+  border-color: rgb(68, 170, 248);
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  margin: 50px 200px;
+}
+.localCity {
+  text-align: left;
+  margin-top: 32px;
+}
+.Temperature {
+  text-align: center;
+  margin-top: 0;
+  margin-top: 20px;
+  font-size: 32px;
+}
+.worldCity {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font: bolder;
+}
+
+.Details {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-top: 32px;
+}
+.fiveDays,
+.world-days {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+.cityWeather {
+  border: solid;
+  border-color: rgb(68, 170, 248);
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  margin: 30px 280px;
+  color: white;
+}
+.cityDetails {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-top: 0;
+  margin-right: 10px;
+}
+.weatherAlerts {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+.cityname {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-left: 0;
+}
+#Farenheit {
+  text-align: center;
+  margin-left: 90px;
+  font-size: 32px;
+}
+#Celsius {
+  font-size: 32px;
+}
+.Name {
+  border-radius: 5px;
+}
+.submit {
+  border-radius: 5px;
+}
+
+.submit:hover {
+  color: black;
+  background: rgb(143, 143, 222);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}

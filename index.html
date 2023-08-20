@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather Page</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container text-center">
+      <h1>🌤️ Your Weather Today 🌤️</h1>
+      <div class="row align-items-start Weather">
+        <div class="col localCity">
+          <strong>⌂ Las Vegas</strong>
+          <button id="local_Btn">Show Current Location</button> <br />
+          <span class="currentDate" id="currentDate">
+            Sunday, July 24, 2023</span
+          >
+          <br />
+          <span class="currentTime" id="currentTime"> 5:55pm</span>
+        </div>
+        <div class="col Temperature"><strong>98°F/ 37°C ☀️</strong></div>
+
+        <div class="col Details">
+          78% precipitation
+          <br />
+          15mph wind gusts
+          <br />38% humidity
+        </div>
+        <br />
+        <div class="row fiveDays">
+          <div class="col"><strong>Monday</strong> <br />95°F/ 35°C ☀️</div>
+          <div class="col"><strong>Tuesday</strong> <br />94°F/ 34°C ☀️</div>
+
+          <div class="col"><strong>Wednesday</strong> <br />90°F/ 32°C 🌦️</div>
+          <div class="col"><strong>Thursday</strong> <br />89°F/ 32°C 🌦️</div>
+          <div class="col"><strong>Friday</strong> <br />90°F/ 32°C 🌧️</div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <div class="cityWeather">
+      <form id="search-form" class="cityname">
+        <input
+          id="search-city-input"
+          type="text"
+          class="Name"
+          autocomplete="off"
+          autofocus="on"
+          placeholder="Type City Name"
+        />
+        <input type="submit" class="submit" placeholder="search-Btn" />
+      </form>
+      <div class="row">
+        <div class="col worldCity">
+          <h3>Paris</h3>
+          <span />
+          Monday, July 24, 2023 <br />6:30am
+        </div>
+        <div class="col">
+          <div>
+            <h2 id="temperature"><strong>17°☀️</strong></h2>
+            <a href="#" id="Farenheit"><strong>°F</strong></a
+            >/ <a href="#" id="Celsius"><strong>°C</strong></a
+            ><br />
+          </div>
+        </div>
+
+        <div class="col cityDetails">
+          15% precipitation
+          <br />
+          2mph wind gusts
+          <br />13% humidity
+        </div>
+        <br />
+        <div class="row world-days">
+          <div class="col"><strong>Tuesday</strong><br />76°F/ 24°C ☀️</div>
+          <div class="col"><strong>Wednesday</strong><br />75°F/ 23°C ☀️</div>
+
+          <div class="col"><strong>Thursday</strong><br />72°F/ 22°C ☀️</div>
+          <div class="col"><strong>Friday</strong><br />70°F/ 21°C 🌤️</div>
+          <div class="col"><strong>Saturday</strong><br />70°F/ 21°C 🌤️</div>
+        </div>
+        <br />
+        <div class="weatherAlerts">
+          <em
+            ><strong
+              >*Weather Alert: There are currently no weather alerts for this
+              region.
+            </strong></em
+          >
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js" defer></script>
+  </body>
+</html>
