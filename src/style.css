@@ -2,7 +2,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://i1.wp.com/www.safegardgroup.com/web-content/uploads/2019/09/severe-weather-scaled.jpeg?fit=2560%2C1706&ssl=1");
+  background-image: url("https://www.wkbn.com/wp-content/uploads/sites/48/2021/01/lightning-thunder-thunderstorm-rain-severe-weather-spring-summer-fall-weather-generic-2.jpg?w=960&h=540&crop=1");
 }
 h1 {
   text-align: center;
@@ -95,9 +95,13 @@ h2 {
 }
 .Name {
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 .submit {
   border-radius: 5px;
+  text-align: center;
+  display: block;
 }
 
 .submit:hover {

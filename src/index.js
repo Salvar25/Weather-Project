@@ -66,7 +66,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 function searchCity(city) {
   let apiKey = "62231151ce343c4d68652e1617efc22f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showTemperature);
 }
 
@@ -83,12 +83,13 @@ function searchCurrentLocation(position) {
   let apiKey = "62231151ce343c4d68652e1617efc22f";
   let longitude = position.coords.longitude;
   let latitude = position.coords.latitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
-  axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(showCurrentTemp);
 }
 
 function showCurrentLocation(event) {
+  console.log(event);
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
